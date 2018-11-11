@@ -1,0 +1,181 @@
+html {
+    /*Include the padding and border in an element's total width and height*/
+    box-sizing: border-box;
+    background-image: url(../images/grid.jpg);
+}
+
+*,
+*::before,
+*::after { /*It's recommended we use these by default"*/
+    box-sizing: inherit;
+}
+
+body {
+    /* Default Some Propreties */
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+::selection {
+    /*Text Selection Color*/
+    color: #000;
+    background: teal;
+}
+
+a:link {
+    /* Unvisited Link */
+    color: teal;
+}
+
+a:visited {
+    /* Visited Link */
+    color: green;
+}
+
+a:hover {
+    /* Mouse-Over Link */
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    /* Selected Link */
+    color: yellow;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 0px 1px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    border-top: 4px solid teal;
+}
+
+h3 {
+    color: teal;
+}
+
+.header-div {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.h1-logo {
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: teal;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+nav.nav-menu-links {
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 14px;
+}
+
+main {
+    clear: both;
+    margin-top: 10%;
+    background-color: aliceblue;
+    padding: 2%;
+}
+
+p.aboutMe {
+    font-size: 100%;
+    line-height: 1.8;
+}
+
+.profile-img {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10%;
+}
+
+
+label { float: left; width: 10em; margin-right: 1em; }
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .header-div {
+        max-width: 768px;
+    }
+    section {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-div {
+        max-width: 640px;
+    }
+    section {
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header-div {
+        max-width: 576px;
+    }
+    section {
+        max-width: 576px;
+    }
+    
+    .h1-logo {
+        display: block;
+    }
+    .header-div {
+        background-color: teal;
+        display: block;
+    }
+
+    .nav-menu-links {position: fixed;
+        display: block;
+        margin: 0 auto;
+    }
+}
